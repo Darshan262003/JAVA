@@ -1,0 +1,30 @@
+import java.util.*;
+
+class LL
+{
+    public static void main (String[] args) { 
+        
+         LinkedList<String> ll = new LinkedList<String>();
+         System.out.println("The Size of LinkedList is :"+ll.size());
+         ll.add("ABC");
+         ll.add("PQR");
+         ll.add("EFG");
+         ll.add("XYZ");
+        System.out.println("THe size  size of Linked List after adding :"+ll.size());
+            System.out.println(ll);
+        
+        ll.remove("PQR");
+        ll.remove(2);
+        System.out.println("The size of Linked list after removing : "+ll.size());
+        System.out.println(ll);
+        
+        ll.add("DAR");
+        ll.add("CAR");
+         System.out.println(ll);
+         
+        ll.removeFirst();
+        ll.removeLast();
+        
+        System.out.println(ll);
+    }
+}

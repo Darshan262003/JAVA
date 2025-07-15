@@ -1,0 +1,30 @@
+import java.util.*;
+
+class Collections
+{
+    public static void main (String[] args) {
+         ArrayList<String> al = new ArrayList<String>();
+         System.out.println("The Size of Array is :"+al.size());
+         al.add("ABC");
+         al.add("PQR");
+         al.add("EFG");
+         al.add("XYZ");
+        System.out.println("THe size  size of Array after adding :"+al.size());
+            System.out.println(al);
+        
+        al.remove("PQR");
+        al.remove(2);
+        System.out.println("The size of Array after removing : "+al.size());
+        System.out.println(al);
+        
+        System.out.println("Converting ArrayList into Array");
+        
+        String sa[] = new String[al.size()];
+        sa = al.toArray(sa);
+        for(String i : sa)
+        {
+            System.out.println(i);
+        }
+        
+    }
+}
